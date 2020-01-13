@@ -15,7 +15,7 @@ pipeline {
     stage('Check dependencies') {
 steps {
 dependencyCheck additionalArguments: '', odcInstallation: 'Dependency-Check'
-  dependencyCheckPublisher failedTotalCritical: 1, failedTotalHigh: 1, failedTotalLow: 10, failedTotalMedium: 5, pattern: '', unstableTotalCritical: 1, unstableTotalHigh: 1, unstableTotalLow: 10, unstableTotalMedium: 5
+  dependencyCheckPublisher failedTotalCritical: 99, failedTotalHigh: 99, failedTotalLow: 99, failedTotalMedium: 99, pattern: '', unstableTotalCritical: 99, unstableTotalHigh: 99, unstableTotalLow: 99, unstableTotalMedium: 99
 
 
 }
